@@ -1,4 +1,4 @@
-#include "../../common/game.h"
+#include "../../../../../common/game.h"
 #include <jni.h>
 /* Header for class com_bradleege_airhockeynative_GameLibJNIWrapper */
 
