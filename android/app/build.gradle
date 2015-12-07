@@ -11,6 +11,15 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    // Commenting out jni source as current versions of NDK don't respect *.mk files
+    // To build jni.c run javah -o ../../../../src/main/jni/jni.c com.bradleege.airhockeynative.GameLibJNIWrapper
+    // from /AirHockeyNative/android/app/build/intermediates/classes/debug
+    // To build run ndk-build from src/main/jni and then rename src/main/libs to src/main/jniLibs
+    sourceSets {
+        main {
+            jni.srcDirs = []
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
